@@ -18,6 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -26,9 +27,17 @@ header {
     color: #fff;
 }
 
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
+    margin-left: auto;
 }
 
 .nav-links li {
@@ -46,6 +55,7 @@ header {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    margin-left: 20px;
 }
 
 .hero {
@@ -141,12 +151,28 @@ header {
 @media (max-width: 768px) {
     /* Header */
     .nav-links {
+        display: none;
         flex-direction: column;
-        margin: 0;
+        position: absolute;
+        top: 60px;
+        right: 20px; /* Distance from the right edge */
+        background-color: #ff6600;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000; /* Make sure it appears above other content */
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px; /* Adjust as needed */
+        top: 10px; /* Adjust vertical position */
     }
 
     .nav-links li {
         margin-bottom: 10px;
+        text-align: center;
     }
 
     /* Hero Section */
