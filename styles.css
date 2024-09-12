@@ -205,3 +205,49 @@ header {
         font-size: 1em;
     }
 }
+
+/* For Desktop */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* For Mobile Screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #ff6600;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .cta {
+        display: none; /* You can hide or style the CTA differently for mobile */
+    }
+
+    /* When menu is open */
+    .nav-links.active {
+        display: flex;
+    }
+}
