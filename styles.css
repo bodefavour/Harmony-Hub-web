@@ -250,4 +250,35 @@ header {
     .nav-links.active {
         display: flex;
     }
+
+    /* Further Mobile Adjustments */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .feature-item h3 {
+        font-size: 1.2em;
+    }
+
+    .feature-item p {
+        font-size: 1em;
+    }
+
+    .testimonial blockquote {
+        font-size: 1.2em;
+    }
+
+    .cta-section h2 {
+        font-size: 1.5em;
+    }
+
+    .cta-section p {
+        font-size: 1em;
+    }
+}
 }
