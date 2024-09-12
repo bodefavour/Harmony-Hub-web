@@ -136,3 +136,72 @@ header {
     text-decoration: none;
     margin: 0 5px;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Header */
+    .nav-links {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    /* CTA Buttons */
+    .cta-buttons .btn {
+        display: block;
+        margin: 10px auto;
+    }
+
+    /* Features Section */
+    .feature-list {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smaller screens adjustments */
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .feature-item h3 {
+        font-size: 1.2em;
+    }
+
+    .feature-item p {
+        font-size: 1em;
+    }
+
+    .testimonial blockquote {
+        font-size: 1.2em;
+    }
+
+    .cta-section h2 {
+        font-size: 1.5em;
+    }
+
+    .cta-section p {
+        font-size: 1em;
+    }
+}
